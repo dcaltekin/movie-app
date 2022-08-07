@@ -1,8 +1,10 @@
 import Head from "next/head";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 export default function Home({ movies }) {
   console.log(movies.results);
+
   return (
     <div>
       <Head>
@@ -23,8 +25,9 @@ export default function Home({ movies }) {
               className="flex items-stretch justify-center lg:justify-start overflow-hidden relative"
             >
               <a href="#" className="relative group block flex-shrink-0">
-                <div className="absolute inset-0 bg-black opacity-75 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer">
+                <div className="absolute inset-0 bg-black bg-opacity-70 hidden group-hover:flex flex-col justify-end text-white px-4 py-4 cursor-pointer">
                   <div>
+                    <h4>{movie.release_date}</h4>
                     <h3 className="text-lg mb-2">{movie.original_title}</h3>
                     <p className="leading-normal truncate">{movie.overview}</p>
                   </div>
@@ -40,6 +43,7 @@ export default function Home({ movies }) {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

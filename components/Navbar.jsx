@@ -19,7 +19,7 @@ function Navbar() {
             </ul>
           </div>
         </nav>{" "}
-        <div className="container mx-auto mt-48 lg:mt-52 lg:px-16 px-4 py-4 h-screen ">
+        <div className="container mx-auto mt-48 lg:mt-52 lg:px-16 px-4 py-4">
           <div className="absolute inset-0 -z-50  opacity-60">
             <img
               src="doctorstrange.jpg"
