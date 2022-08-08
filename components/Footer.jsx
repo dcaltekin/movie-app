@@ -5,9 +5,9 @@ function Footer() {
     <div>
       <footer className=" text-white py-6 md:px-16 px-4 flex flex-col items-center justify-center bg-black mt-16">
         <div className="md:pl-3 md:border-l border-white mb-6">
-          <p className="opacity-75">The Movie App</p>
+          <p className="opacity-75">Film Uygulaması</p>
           <h3 className="md:text-6xl text-3xl font-sans font-bold mb-4">
-            Send E-mail
+            E-Mail Gönder
           </h3>
 
           <form action="#">
@@ -15,12 +15,12 @@ function Footer() {
               <input
                 type="email"
                 className="text-white border bg-transparent py-3 leading-tight px-4  w-full"
-                placeholder="Enter your message here*"
+                placeholder="Mesajınızı buraya giriniz"
               />
               <input
                 type="submit"
                 className="py-3 bg-blue-500 px-8 items-center mt-2 w-full cursor-pointer"
-                value="Send"
+                value="Gönder"
               />
             </div>
           </form>
