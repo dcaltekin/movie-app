@@ -4,8 +4,6 @@ import Navbar from "../components/Navbar";
 import Link from "next/dist/client/link";
 
 export default function Home({ movies }) {
-  console.log(movies.results);
-
   return (
     <div>
       <Head>
